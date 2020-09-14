@@ -1,0 +1,5 @@
+name: Mark's ideas and thoughts
+description: A collection of my personal projects
+# url: https://watermarkhu.github
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title

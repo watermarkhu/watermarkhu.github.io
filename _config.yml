@@ -41,9 +41,9 @@ remote_theme: jekyll/minima
 
 
 header_pages:
-  - about.markdown
-  - cv.markdown
-  - blog.html
+  - pages/about.markdown
+  - pages/cv.markdown
+  - pages/blog.html
 
 disqus:
   shortname: watermarkhu

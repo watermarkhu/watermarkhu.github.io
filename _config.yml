@@ -26,9 +26,8 @@ author:
   email: watermarkhu@gmail.com
   
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Welcome to my website! Here, you'll find information on myself and my thoughts via my blog. 
+  Connect with me via any of my socials below!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://watermarkhu.github.io # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -43,7 +42,7 @@ remote_theme: jekyll/minima
 header_pages:
   - pages/about.markdown
   - pages/cv.markdown
-  - pages/blog.html
+  - pages/blog.markdown
 
 disqus:
   shortname: watermarkhu

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Parse and plot activity data interactively in Jupyter with GPSbabel,  Gpxpy, Geopy and Gmaps"
-date:   2020-09-12 14:14:01 +0200
+date:   2020-09-16 10:14:01 +0200
 ---
 
 There is a Jupyter notebook related to the instructions provided here. Find the notebook and its dependencies [here](https://github.com/watermarkhu/plot_gpx_tcx_map).

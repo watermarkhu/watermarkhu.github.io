@@ -6,7 +6,7 @@ permalink: /cv/
 <link href="kjhealy-screen.css" type="text/css" rel="stylesheet" media="screen">
 
 <div id="cvbox">
-<div style="display: inline-block"> <h1 style="width:6em;">Curriculum Vitae</h1> </div>
+<div style="display: inline-block"> <h1 style="width:8em;">Curriculum Vitae<br>Resume</h1> </div>
 <div style="display: inline-block;" id="cvdownload">
         <a href="CV_Shui_Hu_2020.pdf"> 
         <img src="CV.png" alt="CV preview">
@@ -31,7 +31,7 @@ Preparation and testing of online ocurses on quantum mechanics.
 
 `2018-2019`
 **Flow Engineer**, _[Spirocco Kft.](https://en.spirocco.com/), Budapest_  
-Design, simulation and testing of volume flow meter within an asthma inhaler using autodesk CAD and CFD programns and 3D printing.
+Design, simulation, and testing of volume flow meter within an asthma inhaler using autodesk CAD and CFD programns and 3D printing.
 
 `2018`
 **Marketing and communications intern**, _[Technoorg Linda Kft.](https://technoorg.hu/), Budapest_  
@@ -43,7 +43,7 @@ Management of webshop inventory. Development of Python software for convenient p
 
 `2014-2017`
 **Highschool student tutor**, _[iLoveHomework](http://www.ilovehomework.nl/), The Hague_  
-Homework guidance and tutoring on the subjects of physics, mathematics, chemistry and biology.
+Homework guidance and tutoring on the subjects of physics, mathematics, chemistry, and biology.
 
 `2016`
 **Software engineer intern**, _[PinkRF](https://www.pinkrf.com/), Nijmegen_  
@@ -61,13 +61,11 @@ Bachelor thesis on imaging physics and biophysics; development and documentation
 
 `2015-2016`
 **Medical Delta**, _Erasmus University Rotterdam, Leiden University_  
-Minor program in healthcare and medicine, including courses on anatomy, biophysical processes and imaging techniques.
+Minor program in healthcare and medicine, including courses on anatomy, biophysical processes, and imaging techniques.
 
 `2007-2013`
 **Gymnasium**, _Lorentz Casimir Lycem_  
 Cirriculum track: science & engineering and science & health with additional German and French courses.
-
-
 
 ## AWARDS
 
@@ -97,7 +95,7 @@ Open source simulator for benchmarking and visualizing surface code decoders, wr
 
 `2006-now`
 **Participant and Volunteer First Lego League**, _FLL Brabant, FLL Benelux, FLL Germany, FLL Denmark, FLL Normay, FLL Japan_  
-First participant, after volunteer in judging and organization for the regional, national or international finals of the First Lego League competition.
+First participant, after volunteer in judging and organization for the regional, national, or international finals of the First Lego League competition.
 
 `2017`
 **Freshmen's weekend committee**, _Vereniging voor Technische Physica_  
@@ -105,8 +103,30 @@ Presidential role in organizing the freshmen's weekend activity for 300+ student
 
 `2015-2016`
 **Study tour committee**, _Vereniging voor Technische Physica_  
-Graphic design, communication and planning for the orginization of a 30-day study tour to South-East Asia and China. [View site](https://studytour2016.vvtp.tudelft.nl/).
+Graphic design, communication, and planning for the orginization of a 30-day study tour to South-East Asia and China. [View site](https://studytour2016.vvtp.tudelft.nl/).
 
 `2007-2015`
 **Various committees**,  _Vereniging voor Technische Physica, AEGEE Delft, Lorentz Casimir Lyceum_  
-Various roles including organizer of symposia, editor and graphic designer for the faculty magazine and yearbook, and IT related committees.
+Various roles including organizer of symposia, editor, and graphic designer for the faculty magazine and yearbook, and IT related committees.
+
+## SKILLS
+
+### Languages
+
+`native`
+Dutch, Chinese
+
+`fluent`
+English
+
+### Proficiency
+
+`expert`
+Python, LaTeX
+
+`average`
+MATLAB, Bash  
+Adobe Creative Suite, Autodesk Fusion, Autodesk CFD
+
+`basic`
+HTML5 & CSS, SQL

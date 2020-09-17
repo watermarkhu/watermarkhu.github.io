@@ -4,10 +4,9 @@ title:  "Parse and plot activity data interactively in Jupyter with GPSbabel,  G
 date:   2020-09-16 10:14:01 +0200
 ---
 
-There is a Jupyter notebook related to the instructions provided here. Find the notebook and its dependencies [here](https://github.com/watermarkhu/plot_gpx_tcx_map).
+There is a Jupyter notebook related to the instructions provided here. Find the notebook and its dependencies [here](https://github.com/watermarkhu/plot_gpx_tcx). Figures will be added to this post sometime in the future.
 
-
-## Dependancies 
+## Dependancies
 
 Install [GPSbabel](https://www.gpsbabel.org/download.html), which we use to parse and unzip `.gz` and/or convert`.tcx` files to the same `.gpx` format. On Linux, this can done via  `apt install gpsbabel`. For other systems, please refer to the documentation of GPSbabel.
 

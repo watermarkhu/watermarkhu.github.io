@@ -3,7 +3,7 @@ layout: default
 title: CV
 permalink: /cv/
 ---
-<link href="kjhealy-screen.css" type="text/css" rel="stylesheet" media="screen">
+<link href="../css/cv.css" type="text/css" rel="stylesheet" media="screen">
 
 <div id="cvbox">
 <div style="display: inline-block"> <h1 style="width:8em;">Curriculum Vitae<br>Resume</h1> </div>

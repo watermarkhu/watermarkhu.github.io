@@ -3,8 +3,8 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-<img style="border-radius:50%;" src="me.jpg" alt="Mark">
+<link href="../css/style.css" type="text/css" rel="stylesheet" media="screen">
+<img class="picture" src="/about/me.jpg" alt="Mark">
 
 Hi,  my  name  is  Mark.  I  am  always  eager  to  learn,  use,  and produce innovative tools to tackle complex problems. I am attentive to detail and well organized.  In my work, presentation  and  visual  aesthetics  are  also  essential.  By  combining these traits, my passion has become to create software that can convey detailed information using visualization.
 

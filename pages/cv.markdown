@@ -38,7 +38,7 @@ Design, simulation, and testing of volume flow meter within an asthma inhaler us
 Production of a series of educational videos on Technoorgs' eletron microscopy products.
 
 `2018`
-**Online concent manager**, _[Bever CV](https://www.bever.nl/), Pijnacker_  
+**Online content manager**, _[Bever CV](https://www.bever.nl/), Pijnacker_  
 Management of webshop inventory. Development of Python software for convenient product management.
 
 `2014-2017`
@@ -87,7 +87,7 @@ Pre-print, (2020)
 ## PROJECTS
 
 `2019-2020`
-**OpenSurfaceSim]** (Open Surface Code Simulations)  
+**OpenSurfaceSim** (Open Surface Code Simulations)  
 [_View on GitHub_](https://github.com/watermarkhu/opensurfacesim)  
 Open source simulator for benchmarking and visualizing surface code decoders, written in Python. Grant received from the Unitary Fund.
 

@@ -49,12 +49,12 @@ p {
 
 code {
 	font: normal normal;
-	font-size: 60%;
+	font-size: 80%;
 	font-family: monospace,sans-serif;
-	color: #555;
+	/* color: #555; */
 	position: absolute;
-	left: -16%;
-	width: 10%;
+	left: -18%;
+	width: 14%;
 	text-align: center;
 }
 
@@ -72,7 +72,7 @@ h1 {
 
 
 h2 {
-	color: rgb(40,40,40);
+	/* color: rgb(40,40,40); */
 	font-size: 120%;
 	margin-top: 3em;
 	position: relative;
@@ -113,7 +113,6 @@ h3 {
 	width: 10%;
 	text-align: center;
 }
-
 
 em {
 	font-style: italic;

@@ -8,7 +8,7 @@ There is a Jupyter notebook related to the instructions provided here. Find the 
 
 ## Dependancies
 
-Install [GPSbabel](https://www.gpsbabel.org/download.html), which we use to parse and unzip `.gz` and/or convert`.tcx` files to the same `.gpx` format. On Linux, this can done via  `apt install gpsbabel`. For other systems, please refer to the documentation of GPSbabel.
+Install [GPSbabel](https://www.gpsbabel.org/download.html) , which we use to parse and unzip `.gz` and/or convert`.tcx` files to the same `.gpx` format. On Linux, this can done via  `apt install gpsbabel`. For other systems, please refer to the documentation of GPSbabel.
 
 Most Python dependances can be installed by running `pip install -r requirements.txt` in the notebook repository. However, we'll be using a custom version of `gpxpy`, which parses `.gpx` files. In the package, 'trckpts' points without longitude and latitude fields raise an error for the entire file. The [forked version](https://github.com/watermarkhu/gpxpy) does not raise this error, and deals with such points later. Clone the fork and install with pip in developer mode.
 
@@ -55,21 +55,23 @@ for filename, activity_type in prog(files.items()):
             for point in segment.points:
                 if point.latitude and point.longitude:
                     if not mydict:
-                        locdict = locator("{}, {}".format(point.latitude, point.longitude), language='en').raw
-                        mydict = dict(
-                            year = point.time.year,
-                            month = point.time.month,
-                            weekday = point.time.weekday(),
-                            hour = point.time.hour
-                        )
+                        locdict = locator("{}, {}".format(point.latitude, point.longitude),
+                            language='en').raw
+                        mydict = {
+                            "year"      : point.time.year,
+                            "month"     : point.time.month,
+                            "weekday"   : point.time.weekday(),
+                            "hour"      : point.time.hour
+                        }
                         for key in ["country", "state", "city"]:
-                            mydict[key] = locdict["address"][key] if key in locdict["address"] else "Unknown"
+                            mydict[key] = locdict["address"][key]
+                                if key in locdict["address"] else "Unknown"
                     data.append(dict(
-                        latitude = point.latitude,
-                        longitude = point.longitude,
-                        time = point.time,
-                        type = activity_type,
-                        file = filename,
+                        latitude    = point.latitude,
+                        longitude   = point.longitude,
+                        time        = point.time,
+                        type        = activity_type,
+                        file        = filename,
                         **mydict
                     ))
 

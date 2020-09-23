@@ -76,12 +76,11 @@ _To further develop OpenSurfaceSim, a simulator package for surface codes. The g
 `2012`
 **Singapore International Mathematics Challenge**, _runners up_
 
-
 ## PUBLICATIONS
 
 `2020`
 **Quasilinear-Time Decoding Algorithm for Topological Codes with High Decoding Performance**, _S. Hu, D. Elkouss_  
-[View on ResearchGate](https://www.researchgate.net/publication/344239421_Quasilinear-Time_Decoding_Algorithm_for_Topological_Codes_with_High_Decoding_Performance)  
+[_View on ResearchGate_](https://www.researchgate.net/publication/344239421_Quasilinear-Time_Decoding_Algorithm_for_Topological_Codes_with_High_Decoding_Performance)  
 Pre-print, (2020)
 
 ## PROJECTS

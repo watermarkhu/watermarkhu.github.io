@@ -4,7 +4,7 @@ title:  "Parse and plot activity data interactively in Jupyter with GPSbabel,  G
 date:   2020-09-16 10:14:01 +0200
 ---
 
-There is a Jupyter notebook related to this blog post. Find the notebook [here](https://github.com/watermarkhu/plot_gpx_tcx).
+There is a Jupyter notebook related to this blog post. Find the notebook [here](https://github.com/watermarkhu/strava_gmaps).
 
 ## Strava subscription
 
@@ -20,7 +20,7 @@ So why don't we build our own heatmap from your personal data? And along the way
 
 Your personal data and bulk can be exported from Strava by following this [guide](https://support.strava.com/hc/en-us/articles/216918437-Exporting-your-Data-and-Bulk-Export). You'll notice that this is zipped folder containing quite a few files. We are interested in the `activities.csv` and the activities folder. The csv file is a list of all your activities, and contains metadata such as the activity type, average cadence and calories burned.
 
-![folder](./assets/2020-09-16/data.png)
+![folder](/assets/img/2020-09-16/data.png)
 
 The activities folder contains the files associated with every individual activity. The file type for every activity is actually dependent on the device used for tracking, and may either be `.gpx` or `.tcx`, a compressed `.gz` file, or some other filetype that I didn't come across. I mostly use fitness watch to track my activities, but sometimes use my phone as well. We'll need to make sure that all filetypes can parsed by our program. I've tried many gpx, tcx or general xml parsers. But none seems to be as reliable as [GPSbabel](https://www.gpsbabel.org). The installation instructions for GPSbabel are [here](https://www.gpsbabel.org/downloads.html).
 
@@ -82,7 +82,7 @@ print("Dataframe ready")
 
 ## Plotting on top of an interactive Google Maps window
 
-Finally, we plot interactively on Google Maps via [gmaps](https://pypi.org/project/gmaps/). The documentation is provided [here](https://jupyter-gmaps.readthedocs.io/en/latest/). As mentioned earlier, you'll need a Google Cloud Platform account and a Google Maps API key. How to acquire this key for yourself can be found in the documentation of gmaps. We configure our `PlotApp` such that any column in the dataframe can be enabled as a selectable category in the interactive window. See `plotter.py` for more details
+Finally, we plot interactively on Google Maps via [gmaps](https://pypi.org/project/gmaps/). The documentation is provided [here](https://jupyter-gmaps.readthedocs.io/en/latest/). As mentioned ealier, you'll need a Google Cloud Platform account and a Google Maps API key. How to acquire this key for yourself can be found in the documentation of gmaps. We configure our `PlotApp` such that any column in the dataframe can be enabled as a selectable category in the interactive window. See `plotter.py` for more details
 
 ```python
 api_key = "AI....."
@@ -92,8 +92,8 @@ map = PlotApp(api_key, df, categories)
 map.render()
 ```
 
-![select](./assets/2020-09-16/select.png)
-![map1](./assets/2020-09-16/map.png)
+![select](/assets/img/2020-09-16/select.png)
+![map1](/assets/img/2020-09-16/map.png)
 
 The heatmap gradient can be changed by supplying a list of colors from a list of basic CSS colors or in tuple format for RGB or RGBA.
 
@@ -106,14 +106,14 @@ map.heatmap.gradient = [
 ]
 ```
 
-![map2](./assets/2020-09-16/map2.png)
+![map2](/assets/img/2020-09-16/map2.png)
 
 If the one wants to customize the style of the background map, we will need to install the version of Gmaps of this [pull request](https://github.com/pbugnion/gmaps/pull/330). The pull request is fully functional, but development on Gmaps is seemingly inactive. The installation instructions are included in the notebook. A custom map style can be created in the [Google Maps Platform Styling Wizard](https://mapstyle.withgoogle.com/). The outputted JSON is to be saved as a string to the `map.fig.styles` attribute
 
 Notice that with gmaps, we can change the colors of the heatmap and the background map itself after the map has been rendered. This is great! We can make it look exactly as we like to.
 
-![map3](./assets/2020-09-16/map3.png)
+![map3](/assets/img/2020-09-16/map3.png)
 
-![map4](./assets/2020-09-16/map4.png)
+![map4](/assets/img/2020-09-16/map4.png)
 
 The downside to this application is that dimension of the exported image cannot be specified. The quality of the image is limited to the interactive window.

@@ -37,7 +37,6 @@ plugins:
 
 remote_theme: jekyll/minima
 
-
 header_pages:
   - pages/about.markdown
   - pages/cv.markdown
@@ -53,6 +52,11 @@ minima:
     instagram: watermarkhu
     linkedin: watermarkhu
     telegram: watermarkhu
+
+kramdown:
+  # instruct kramdown to parse inside html block elements
+  # like p, header, lists, ...
+  parse_block_html: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -8,9 +8,9 @@ permalink: /cv/
 <div id="cvbox">
 <div style="display: inline-block"> <h1 style="width:8em;">Curriculum Vitae<br>Resume</h1> </div>
 <div style="display: inline-block;" id="cvdownload">
-        <a href="CV_Shui_Hu_2020.pdf"> 
-        <img src="CV.png" alt="CV preview">
-        Download PDF version</a>
+<a href="{{site.url}}/data/cv/CV_Shui_Hu_2020.pdf"> 
+<img src="{{site.url}}/data/cv/CV.png" alt="CV preview">
+PDF version</a>
 </div>
 </div>
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Delft campus"
+title: "Should the renovated station be named Delft Campus?"
 date: 2020-10-18
 ---
 <head>
@@ -8,51 +8,80 @@ date: 2020-10-18
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
 </head>
 
-# Station Delft Campus versus Station Delft
+Just a about a year ago, construction work started on renovating the train station of Delft Zuid. Similarly to what happened to Station Delft, the goal of the renovation project is to improve the connection between Rotterdam and The Hague by adding 2 tracks to the existing rail, such that the Intercity's can overtake the Sprinters. For station Delft, this project took almost 15 years, yikes. (Who remembers that [big blue metal pedestrian bridge](https://indebuurt.nl/delft/wp-content/uploads/2018/04/delft_station_laatste_dagen_vanaf_brug_ii.jpg)?) By also moving large segments of the new rail underground in the city center, space is made available for the construction of ~40.000 new apartments in the new neighborhood of Nieuw Delft by 2040.
 
-Just a about a year ago, construction work started on renovating the train station of Delft Zuid. Similarly to what happened to Station Delft, the goal of the renovation project is to improve the connection between Rotterdam and The Hague by adding 2 tracks to the existing rail, such that the Intercity's can overtake the Sprinters. For station Delft, this project took almost 15 years, yikes. (Who remembers that big blue metal pedestrian bridge?) By also moving large segments of the new rail underground in the city center, space is made available for the construction of ~40.000 new apartments in the new neighborhood of Nieuw Delft by 2040.
+![Nieuw Delft (nieuwdelft.nl)](https://nieuwdelft.nl/wp-content/uploads/2018/07/antoooni.jpg "Nieuw Delft (nieuwdelft.nl)")
 
 For Delft Zuid, the city of Delft decided that simply adding two rails wasn't enough. With all the bright minds of the Delft University at walking distance, the new station should reflect the innovation of the next generation. Big solar panels acting as the platform overhead will make the renovated station energy self sufficient, a first of its kind in the Netherlands. Exciting stuff, to be honest. To finish the rebranding, Delft Zuid is renamed to Delft Campus, which has cost €100.000 to €150.000 on its own.
 
-So, what is this post all about? A few weeks back, when I was talking to some friends about the facts of the previous paragraphs, we asked ourselves who actually uses the Delft Campus Station. And from a very limited enquiry that we did amongst ourselves, it turns out that almost no one goes to Delft Campus. Station Delft is almost at the same distance from most faculties and has better accessibility and connectivity. So, if no one (or only a very limited group) from the university campus uses the station, should it be named Delft *Campus*? Or should it rather be named for something more representative of its demographics such as Delft Voorhof, Delft Tanthof, or even better: Delft *Zuid*?
+![Delft Campus (rgcdn.nl)](https://imgw.rgcdn.nl/4bd7c89479c940718e43e4e6cd09edc2/opener/Het-nieuwe-NS-station-Delft-Campus-Foto-ProRail.jpg "Delft Campus (rgcdn.nl)")
 
-**Disclaimer:** This is not some rant on the city of Delft, or some actual proposal to change the name of Delft Campus back to Delft Zuid. It's just for good fun. And another €100.000 to €150.000 wasted would be pretty stupid.
+So, what is this post all about? A few weeks back, when I was talking to some friends about the facts of the previous paragraphs, we asked ourselves who actually uses the Delft Campus Station. And from a very limited enquiry that we did amongst ourselves, it turns out that almost no one goes to Delft Campus. Station Delft is almost at the same distance from most faculties and has better accessibility and connectivity. So, if no one (or only a very limited group) from the university campus uses the station, should it be named Delft **Campus**? Or should it rather be named for something more representative of its demographics such as Delft Voorhof, Delft Tanthof, or even better: Delft **Zuid**?
 
 ## Campus area distribution
 
-The obvious thing is to find the distribution of the actual campus area that is closer to either Station Delft or Delft Campus. I've taken the following polygonS for the campus area (from the [TU Delft interactive map](https://iamap.tudelft.nl/)), which includes the Science Center, Duwo and the Botanical garden in the North, all sport fields of X Delft (talking about stupid rebranding), and all blocks up and including Reactor Delft in the South. Note that this area also include the apartments of Michiel de Ruyterweg and Stieltjesweg. While they are no part of TU Delft, they are part of the campus in my opinion.
+The obvious thing is to find the distribution of the actual campus area that is closer to either Station Delft or Delft Campus. I've taken the area for the campus from the [TU Delft interactive map](https://iamap.tudelft.nl/), which consists of 3 blocks; the Science Center and the Botanical garden in the North, the main Mekelpark area including all of X Delft (talking about a stupid rebranding), and the block on the other side of Kruithuisweg.
 
 <div id='map' style='height: 300px;'></div>
 
-To find the distribution, we need to find the boundary line od the closest train station within this polygon. But what defines which station is closer? It would be fair to check for the crow-fly distance to either stations. Due to the Schie canal, we'll need to find the actual commute time. Likily, Google Maps provides us with an API to simplify this. We'll use the `googlemaps` Python module to get the commute time and plot our distribution with the `gmaps` module. Checkout my previous post on [interactively plotting your exported Strava data](https://watermarkhu.nl/2020/09/16/strava-mapper.html).
+*You can rotate and tilt the map using the right mouse button.*
+
+I've added the ground area of the Haagse Hogeschool and InHolland. While they are no part of TU Delft, they are definitely a part of the Delft campus.
+
+To find the distribution, we cannot simply look at the crow-fly distance to either stations. The geometry of roads, canals and rivers requires us to look at the actual travel time. Using the Google Maps API and the `googlemaps` Python module, we populate the campus area polygons with points and look up the travel time to both stations from each point using its longitude `lng` and latitude `lat`. See the [Jupyter notebook](https://github.com/watermarkhu/delft_campus_distance) for the full implementation.
+
+```python
+directions = googlemaps_instance.directions(
+    (lat, lng),
+    (station.lat, station.lng),
+    mode="bicycling",
+    departure_time=datetime.now()
+)
+travel_time = sum([
+    leg["duration"]["value"]
+    for leg in directions[0]["legs"]
+])
+```
+
+Here, we can also specify the transportation method.  We can assume that most students travel by bike.
 
 <div id='map2' style='height: 300px;'></div>
 
+We find the distribution for other types of transportation using the same method. In all cases except for using transit, the majority of the campus area is closer to the Delft Campus Station.
+
+![distribution]({{site.url}}/data/2020-10-18-delft-campus/mpl_distribution.png "Distribution")
+
+Except for when you're using transit, Delft Campus station is the closest train station. You've won this round, city of Delft.
+
 ## Using faculty population
 
-The analysis of the previous paragraph treats all areas as equal. But the number of students or employee per square meter - the area occupancy - is of course not equally divided over the entire campus, as each faculty may house a different number of students.
+The analysis of the previous paragraph treats all areas on campus equally. But the number of students or employee per square meter - the area occupancy - is not equally divided over the entire campus, as each faculty may house a different number of students. The following table contains the student population [per faculty](https://www.tudelft.nl/en/about-tu-delft/facts-and-figures/education/student-population/), including the [Haagse Hogeschool](https://www.dehaagsehogeschool.nl/docs/default-source/documenten-onderzoek/expertisecentra/governance-of-urban-transitions/jaarverslag-2019-kc-guts.pdf) and [InHolland](https://www.studiekeuze123.nl/onderwijsinstellingen/hogeschool-inholland/delft).
 
 | Faculty/Building                                          | Students |
 | --------------------------------------------------------- | -------- |
 | Architecture                                              | 2806     |
-| Applied Sciences                                          | 1958     |  
-| Applied Sciences (old building)                           | 1186     |  
+| Applied Sciences (Chemistry, Bionanoscience)              | 1958     |  
+| Applied Sciences (Applied Physics)                        | 1186     |  
 | Aerospace Engineering                                     | 2642     |
 | Civil Engineering and Geoscience                          | 3644     |
 | Electrical Engineering, Mathematic and Computer Science   | 4024     |
 | Industrial Design Engineering                             | 1964     |
 | Mechanical, Maritime and Materials Engineering            | 4866     |  
 | Technology, Policy and Management                         | 1613     |
-| Haagste Hogeschool                                        | 2658     |
+| Haagse Hogeschool                                         | 2658     |
 | Inholland                                                 | 1236     |
 
-The following table contains the student population per faculty. I've also added the population of students of De Haagse Hogeschool and Inholland.
+Faculty occupation gives us a better estimate for the closest station, but is definitely not precise. For example, do the students from each faculty go to their faculty as often? Do students have lectures in their own faculty, or in the Auditorium or some other faculty in stead? How often do students study in some other building such as the library, Pulse or the Fellowship? Do these things even matter when everyone is sitting in they own rooms anyways due to Covid-19? If we are going to include all these factors, this problem becomes something that is too complex to solve on a Sunday, so let us just assume it is good enough. [The cow is round](https://en.wikipedia.org/wiki/Spherical_cow), right?
+
+Using the same methods in the previous paragraph, we can find the nearest station from each faculty. For bicycling and walking directions, the majority of students are closer to Station Delft, whereas for transit and driving directions the result is the same.
 
 <div id='map3' style='height: 300px;'></div>
 
-Now, the numerics on the area occupancy using the faculty population is quite problematic. For example, do the students from each faculty go to their faculty as often? Do students have lectures in their own faculty, or in the Aula or some other faculty in stead? How often do students study in some other building such as the library, Pulse or the Fellowship? Do these things even matter when everyone is sitting in they own rooms anyways due to Covid-19?
+![faculties]({{site.url}}/data/2020-10-18-delft-campus/mpl_faculties.png "faculties")
 
-If we are going to include all these factors, this problem becomes something that is too complex to solve on a Sunday. So, let's for simplicity just assume that the proportion of student population is an estimate of the actual area occupancy. The number of employees per faculty should scale with the number of students. Finally, let's assume that all students enter their buildings via the main entrance.
+So, as it turns out, for the majority of students on the Delft campus, it takes less time to travel to Station Delft compared to the Delft Campus station. Well, except for the few snobby students that travel to the station by car, if they exist at all. So using this logic, shouldn't Station Delft have been renamed to Delft Campus instead, and the secondary station be named Delft Zuid?
+
+Well, of course not. This article is not some rant on the city of Delft, or some actual proposal to change the name of Delft Campus back to Delft Zuid. It's just for good fun. And another €100.000 to €150.000 wasted would be pretty stupid. Additionally, there are plans for a [new bridge in 2023](https://www.delft.nl/wonen/bouwen/bouwprojecten-de-stad/schieoevers/gelatinebrug) across the Schie canal near Lijm & Cultuur, which probably would make the Delft Campus station the closest station for the majority of the campus. I just wonder how long that will take...
 
 <script>
 var base_url = window.location.origin;
@@ -320,7 +349,7 @@ map2.on('load', function () {
     });
     map2.addSource('locs', {
         type: 'geojson',
-        data: base_url.concat('/data/2020-10-18-delft-campus/points.geojson')
+        data: base_url.concat('/data/2020-10-18-delft-campus/points_bicycling.geojson')
     });
     map2.addLayer({
         'id': 'locs',
@@ -358,7 +387,7 @@ var map3 = new mapboxgl.Map({
 map3.on('load', function () {
     map3.addSource('locs', {
         type: 'geojson',
-        data: base_url.concat('/data/2020-10-18-delft-campus/faculties.geojson')
+        data: base_url.concat('/data/2020-10-18-delft-campus/faculties_bicycling.geojson')
     });
     map3.addLayer({
         'id': 'locs',
@@ -368,7 +397,7 @@ map3.on('load', function () {
             // make circles larger as the user zooms from z12 to z22
             'circle-radius': [
                 "interpolate", ["linear"], ["zoom"],
-                0, ["/", ['get', 'radius'], 200]
+                0, ["/", ['^', ['get', 'radius'], .5], 3]
             ],
             'circle-color': [
                 'match',
@@ -381,6 +410,12 @@ map3.on('load', function () {
             ],
             'circle-opacity': 0.7
         }
+    });
+    map3.on('click', 'locs', function (e) {
+        new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(e.features[0].properties.html)
+        .addTo(map3);
     });
 });
 </script>

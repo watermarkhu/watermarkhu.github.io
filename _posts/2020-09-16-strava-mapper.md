@@ -4,11 +4,9 @@ title:  "Parse and plot activity data interactively in Jupyter with GPSbabel,  G
 date:   2020-09-16 10:14:01 +0200
 ---
 
-There is a Jupyter notebook related to this blog post. Find the notebook [here](https://github.com/watermarkhu/strava_gmaps).
-
-## Strava subscription
-
 In the last months it seemed that everyone is joining Strava. It may due to that we're all tired of staying in our homes during the COVID-pandemic. Or it may be due to the fact that [almost half of all people have gained weight](https://www.hartvannederland.nl/nieuws/2020/helft-mensen-dikker-coronaquarantaine/) due to lack of movement. Whatever the reason, Strava has gained a lot of users. However, if you are an OG user and have joined before May 20th, 2020, you'll know that there were many useful features that are now locked behind the [Strava subscription](https://support.strava.com/hc/en-us/articles/360043959831-What-s-changed-on-Strava-). For example, the leaderboard, matched runs and route builder are all only for those that pay a minimum of around $5 per month. For many, it is just not woth it.
+
+ <!--more-->
 
 On of the removed features that I really enjoyed was the personal heatmap, on which you're activities are beautifully plotted on a stylized instance of Google Maps. Maybe it's just because I'm a sucker for these kind of things, but seeing everywhere I've run gave me a sense of accomplishment, as if my runs are engraved into the asphalt and bricks of these roads on the heatmap.
 
@@ -26,7 +24,7 @@ The activities folder contains the files associated with every individual activi
 
 ## Parsing data in Jupyter notebook
 
-Within our Jupyter notebook, we first utilize GPSbabel to convert all activities files to a unified gpx format. This can be simplify done using our function `parse_activities()`.
+There is a Jupyter notebook related to this blog post. Find the notebook [here](https://github.com/watermarkhu/strava_gmaps). Within our Jupyter notebook, we first utilize GPSbabel to convert all activities files to a unified gpx format. This can be simplify done using our function `parse_activities()`.
 
 ```python
 folder = "../EXPORT_########/"

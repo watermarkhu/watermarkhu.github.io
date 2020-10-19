@@ -10,6 +10,7 @@ date: 2020-10-18
 
 Just a about a year ago, construction work started on renovating the train station of Delft Zuid. Similarly to what happened to Station Delft, the goal of the renovation project is to improve the connection between Rotterdam and The Hague by adding 2 tracks to the existing rail, such that the Intercity's can overtake the Sprinters. For station Delft, this project took almost 15 years, yikes. (Who remembers that [big blue metal pedestrian bridge](https://indebuurt.nl/delft/wp-content/uploads/2018/04/delft_station_laatste_dagen_vanaf_brug_ii.jpg)?) By also moving large segments of the new rail underground in the city center, space is made available for the construction of ~40.000 new apartments in the new neighborhood of Nieuw Delft by 2040.
 
+ <!--more-->
 ![Nieuw Delft (nieuwdelft.nl)](https://nieuwdelft.nl/wp-content/uploads/2018/07/antoooni.jpg "Nieuw Delft (nieuwdelft.nl)")
 
 For Delft Zuid, the city of Delft decided that simply adding two rails wasn't enough. With all the bright minds of the Delft University at walking distance, the new station should reflect the innovation of the next generation. Big solar panels acting as the platform overhead will make the renovated station energy self sufficient, a first of its kind in the Netherlands. Exciting stuff, to be honest. To finish the rebranding, Delft Zuid is renamed to Delft Campus, which has cost €100.000 to €150.000 on its own.

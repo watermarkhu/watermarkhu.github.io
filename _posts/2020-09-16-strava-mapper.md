@@ -90,8 +90,9 @@ map = PlotApp(api_key, df, categories)
 map.render()
 ```
 
-![select](/assets/img/2020-09-16/select.png)
-![map1](/assets/img/2020-09-16/map.png)
+![select]({{site.url}}/data/2020-09-16-stravamapper/select.png "Selecting the data")
+
+![map1]({{site.url}}/data/2020-09-16-stravamapper/map.png "The plotting heatmap")
 
 The heatmap gradient can be changed by supplying a list of colors from a list of basic CSS colors or in tuple format for RGB or RGBA.
 
@@ -104,14 +105,14 @@ map.heatmap.gradient = [
 ]
 ```
 
-![map2](/assets/img/2020-09-16/map2.png)
+![Heatmap with custom colors]({{site.url}}/data/2020-09-16-stravamapper/map2.png "Custom heatmap colors!")
 
 If the one wants to customize the style of the background map, we will need to install the version of Gmaps of this [pull request](https://github.com/pbugnion/gmaps/pull/330). The pull request is fully functional, but development on Gmaps is seemingly inactive. The installation instructions are included in the notebook. A custom map style can be created in the [Google Maps Platform Styling Wizard](https://mapstyle.withgoogle.com/). The outputted JSON is to be saved as a string to the `map.fig.styles` attribute
 
 Notice that with gmaps, we can change the colors of the heatmap and the background map itself after the map has been rendered. This is great! We can make it look exactly as we like to.
 
-![map3](/assets/img/2020-09-16/map3.png)
+![Custom map style.]({{site.url}}/data/2020-09-16-stravamapper/map3.png "Customized map style!")
 
-![map4](/assets/img/2020-09-16/map4.png)
+![Custom map style 2.]({{site.url}}/data/2020-09-16-stravamapper/map4.png "Pretty colors!")
 
 The downside to this application is that dimension of the exported image cannot be specified. The quality of the image is limited to the interactive window.

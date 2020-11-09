@@ -74,27 +74,39 @@ Cirriculum track: science & engineering and science & health with additional Ger
 _To further develop OpenSurfaceSim, a simulator package for surface codes. The grant will improve visualization methods and facilitate the collaboration of an open, modular platform for surface code simulations._
 
 `2012`
-**Singapore International Mathematics Challenge**, _runners up_
+**Singapore International Mathematics Challenge**, _NUS_  
+_Second prize_ and presentation award for the 2012 SIMC challenge.
 
 ## PUBLICATIONS
 
 `2020`
 **Quasilinear-Time Decoding Algorithm for Topological Codes with High Decoding Performance**, _S. Hu, D. Elkouss_  
-[_View on ResearchGate_](https://www.researchgate.net/publication/344239421_Quasilinear-Time_Decoding_Algorithm_for_Topological_Codes_with_High_Decoding_Performance)  
-Pre-print, (2020)
+[View conference paper](https://www.researchgate.net/publication/344163179_Quasilinear_Time_Decoding_Algorithm_for_Topological_Codes_with_High_Error_Threshold)  
+Pre-print
+
+`2020`
+**Quasilinear Time Decoding Algorithm for Topological Codes with High Error Threshold**, _S. Hu, D. Elkouss_  
+[DOI: 10.13140/RG.2.2.13495.96162](https://www.researchgate.net/deref/http%3A%2F%2Fdx.doi.org%2F10.13140%2FRG.2.2.13495.96162?_sg%5B0%5D=ejMlL55PbdMNxSMGTs-jdb8Dttlb_8His8oDmZdIpkXh5yEoME4-K4SIDJ8aBufaz-Af_1FTAWTy4QFujWOWjm2QfA.xmf-1VAclh8KM3_1qhttuBxfdvxd1-YhPtKMlZXW1mNtxhh3TCEe0NseW5CBGVvnryyrsog4hHTXhME91GTypQ)  
+Master thesis
+
+`2017`
+**User-friendly analysis of fluorescent spot position of bacterial proteins using a microfluidic device and agarose pads.**, _S. Hu, R. de Leeuw_  
+[DOI: 10.13140/RG.2.2.34615.55205](https://www.researchgate.net/deref/http%3A%2F%2Fdx.doi.org%2F10.13140%2FRG.2.2.34615.55205?_sg%5B0%5D=eH7_Dzcxc4jQ0VS5vRZha9plCps-zLRFruRHU6vXcOiGlz7QGxk20--nb9uUTW8zwcw-7vLf1v8I1dAujLRGMwrjVg.U8SlinTWpPLPcn-u9qWLc73fTbkms9-xiGBqlFlFL58oyCNYQjACYjJHnkQ4HDCuIT3zIxONfV_wimQuhqnzpg)  
+Bachelor thesis
 
 ## PROJECTS
 
 `2019-2020`
-**OpenSurfaceSim** (Open Surface Code Simulations)  
-[_View on GitHub_](https://github.com/watermarkhu/opensurfacesim)  
+**opensurfacesim** (Open Surface Code Simulations)  
+[![PyPI version](https://img.shields.io/pypi/v/opensurfacesim?color=blue)](https://pypi.org/project/opensurfacesim/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4247617.svg)](https://doi.org/10.5281/zenodo.4247617)  
 Open source simulator for benchmarking and visualizing surface code decoders, written in Python. Grant received from the Unitary Fund.
 
 ## ACTIVITIES
 
 `2006-now`
 **Participant and Volunteer First Lego League**, _FLL Brabant, FLL Benelux, FLL Germany, FLL Denmark, FLL Normay, FLL Japan_  
-First participant, after volunteer in judging and organization for the regional, national, or international finals of the First Lego League competition.
+As participant: Winner of FLLOEC Norway 2007 and first in robot design in FLLOAC Japan 2008.  
+As volunteer: Judging and organization for the regional, national, or international finals of the First Lego League competition in the Netherlands and Germany.
 
 `2017`
 **Freshmen's weekend committee**, _Vereniging voor Technische Physica_  

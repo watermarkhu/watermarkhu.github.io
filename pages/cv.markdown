@@ -81,17 +81,17 @@ _Second prize_ and presentation award for the 2012 SIMC challenge.
 
 `2020`
 **Quasilinear-Time Decoding Algorithm for Topological Codes with High Decoding Performance**, _S. Hu, D. Elkouss_  
-[View conference paper](https://www.researchgate.net/publication/344163179_Quasilinear_Time_Decoding_Algorithm_for_Topological_Codes_with_High_Error_Threshold)  
+[Conference paper](https://www.researchgate.net/publication/344163179_Quasilinear_Time_Decoding_Algorithm_for_Topological_Codes_with_High_Error_Threshold)  
 Pre-print
 
 `2020`
 **Quasilinear Time Decoding Algorithm for Topological Codes with High Error Threshold**, _S. Hu, D. Elkouss_  
-[DOI: 10.13140/RG.2.2.13495.96162](https://www.researchgate.net/deref/http%3A%2F%2Fdx.doi.org%2F10.13140%2FRG.2.2.13495.96162?_sg%5B0%5D=ejMlL55PbdMNxSMGTs-jdb8Dttlb_8His8oDmZdIpkXh5yEoME4-K4SIDJ8aBufaz-Af_1FTAWTy4QFujWOWjm2QfA.xmf-1VAclh8KM3_1qhttuBxfdvxd1-YhPtKMlZXW1mNtxhh3TCEe0NseW5CBGVvnryyrsog4hHTXhME91GTypQ)  
+[DOI: 10.13140/RG.2.2.13495.96162](http://dx.doi.org/10.13140/RG.2.2.13495.96162)  
 Master thesis
 
 `2017`
 **User-friendly analysis of fluorescent spot position of bacterial proteins using a microfluidic device and agarose pads.**, _S. Hu, R. de Leeuw_  
-[DOI: 10.13140/RG.2.2.34615.55205](https://www.researchgate.net/deref/http%3A%2F%2Fdx.doi.org%2F10.13140%2FRG.2.2.34615.55205?_sg%5B0%5D=eH7_Dzcxc4jQ0VS5vRZha9plCps-zLRFruRHU6vXcOiGlz7QGxk20--nb9uUTW8zwcw-7vLf1v8I1dAujLRGMwrjVg.U8SlinTWpPLPcn-u9qWLc73fTbkms9-xiGBqlFlFL58oyCNYQjACYjJHnkQ4HDCuIT3zIxONfV_wimQuhqnzpg)  
+[DOI: 10.13140/RG.2.2.34615.55205](http://dx.doi.org/10.13140/RG.2.2.34615.55205)  
 Bachelor thesis
 
 ## PROJECTS

@@ -10,8 +10,8 @@ date: 2020-10-18
 
 Just a about a year ago, construction work started on renovating the train station of Delft Zuid. Similarly to what happened to Station Delft, the goal of the renovation project is to improve the connection between Rotterdam and The Hague by adding 2 tracks to the existing rail, such that the Intercity's can overtake the Sprinters. For station Delft, this project took almost 15 years, yikes. (Who remembers that [big blue metal pedestrian bridge](https://indebuurt.nl/delft/wp-content/uploads/2018/04/delft_station_laatste_dagen_vanaf_brug_ii.jpg)?) By also moving large segments of the new rail underground in the city center, space is made available for the construction of ~40.000 new apartments in the new neighborhood of Nieuw Delft by 2040.
 
- <!--more-->
 ![Nieuw Delft (nieuwdelft.nl)](https://nieuwdelft.nl/wp-content/uploads/2018/07/antoooni.jpg "Nieuw Delft (nieuwdelft.nl)")
+ <!--more-->
 
 For Delft Zuid, the city of Delft decided that simply adding two rails wasn't enough. With all the bright minds of the Delft University at walking distance, the new station should reflect the innovation of the next generation. Big solar panels acting as the platform overhead will make the renovated station energy self sufficient, a first of its kind in the Netherlands. Exciting stuff, to be honest. To finish the rebranding, Delft Zuid is renamed to Delft Campus, which has cost €100.000 to €150.000 on its own.
 
@@ -32,16 +32,16 @@ I've added the ground area of the Haagse Hogeschool and InHolland. While they ar
 To find the distribution, we cannot simply look at the crow-fly distance to either stations. The geometry of roads, canals and rivers requires us to look at the actual travel time. Using the Google Maps API and the `googlemaps` Python module, we populate the campus area polygons with points and look up the travel time to both stations from each point using its longitude `lng` and latitude `lat`. See the [Jupyter notebook](https://github.com/watermarkhu/delft_campus_distance) for the full implementation.
 
 ```python
-directions = googlemaps_instance.directions(
-    (lat, lng),
-    (station.lat, station.lng),
-    mode="bicycling",
-    departure_time=datetime.now()
-)
-travel_time = sum([
-    leg["duration"]["value"]
-    for leg in directions[0]["legs"]
-])
+>>> directions = googlemaps_instance.directions(
+...     (lat, lng),
+...     (station.lat, station.lng),
+...     mode="bicycling",
+...     departure_time=datetime.now()
+... )
+>>> travel_time = sum([
+...     leg["duration"]["value"]
+...     for leg in directions[0]["legs"]
+... ])
 ```
 
 Here, we can also specify the transportation method.  We can assume that most students travel by bike.
@@ -87,10 +87,11 @@ Well, of course not. This article is not some rant on the city of Delft, or some
 <script>
 var base_url = window.location.origin;
 mapboxgl.accessToken = 'pk.eyJ1Ijoid2F0ZXJtYXJraHUiLCJhIjoiY2tnZmFtNGQ0MHZuNDJ3cXplOHFjazN4cCJ9.qh1tZmfKnllyahFUz9xJcw';
-
+//'mapbox://styles/watermarkhu/ckgf5td1938fp19qkdjxr4hqi'
+var style = 'mapbox://styles/watermarkhu/ckhbuuhs00vjz19rxhd8nf6vh'
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/watermarkhu/ckgf5td1938fp19qkdjxr4hqi', // stylesheet location
+    style: style,
     center: [4.374336, 51.998907],
     zoom: 13.6,
     bearing: 68,
@@ -221,7 +222,7 @@ map.on('load', function () {
 
 var map2 = new mapboxgl.Map({
     container: 'map2',
-    style: 'mapbox://styles/watermarkhu/ckgf5td1938fp19qkdjxr4hqi', // stylesheet location
+    style: style, // stylesheet location
     center: [4.374336, 51.998907],
     zoom: 13.6,
     bearing: 68,
@@ -380,7 +381,7 @@ map2.on('load', function () {
 
 var map3 = new mapboxgl.Map({
     container: 'map3',
-    style: 'mapbox://styles/watermarkhu/ckgf5td1938fp19qkdjxr4hqi', // stylesheet location
+    style: style, // stylesheet location
     center: [4.374336, 51.998907],
     zoom: 13.6,
     bearing: 68,

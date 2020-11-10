@@ -6,9 +6,8 @@ date: 2020-11-09
 
 A *little* while ago, I started my graduation project in the field of quantum error-correction. During this project, we have successfully developed a new type of decoder for the surface code, for which the publication is currently in pre-print. To fully understand the mechanics of the surface code decoders that eventually led to our decoder, I had built my surface code simulator in Python that allowed for the visualization of each decoding step. To my surprise, my application for a microgrant to the [Unitary Fund](https://unitary.fund) was accepted, which allowed me the continue working for a few months after graduation. Today, I've finished my work and released the simulator on [PyPI](https://pypi.org/project/opensurfacesim/), which means you can install it via `pip install opensurfacesim`! Let me tell you more about it.
 
-<!--more-->
-
 ![PyPI screenshot]({{site.url}}/data/2020-11-09-opensurfacesim/pypi.jpg "Look at ma boy!")
+<!--more-->
 
 ## Surface code
 
@@ -22,7 +21,7 @@ The design of a *quantum* error-correcting code is thus fundamentally different 
 
 ## opensurfacesim
 
-Initially, the simulator's focus was to visualize each step of the decoding process of the [*Union-Find*](https://arxiv.org/pdf/1709.06218.pdf) decoder. This is a relatively new decoder that offers relatively fast decoding at the cost of slightly decreased fidelity compared to the standard [*Minimum-Weight Perfect Matching* (MWPM)](https://arxiv.org/abs/quant-ph/0110143) decoder. I was determined that the fidelity could be improved. By studying the decoding process using the simulator, we developed a modification that is now dubbed the *Union-Find Node-Suspension* decoder. You can read more about decoders in my [thesis](https://www.researchgate.net/publication/344163215_Quasilinear_Time_Decoding_Algorithm_for_Topological_Codes_with_High_Error_Threshold) or in the paper (link updated when published).
+Initially, the simulator's focus was to visualize each step of the decoding process of the [*Union-Find*](https://arxiv.org/pdf/1709.06218.pdf) decoder. This is a relatively new decoder that offers fast decoding at the cost of slightly decreased fidelity compared to the standard [*Minimum-Weight Perfect Matching* (MWPM)](https://arxiv.org/abs/quant-ph/0110143) decoder. I was determined that the fidelity could be improved. By studying the decoding process using the simulator, we developed a modification that is now dubbed the *Union-Find Node-Suspension* decoder. You can read more about decoders in my [thesis](https://www.researchgate.net/publication/344163215_Quasilinear_Time_Decoding_Algorithm_for_Topological_Codes_with_High_Error_Threshold) or in the paper (link updated when published).
 
 After receiving the grant, I realized that the simulator's modularity is a prime objective and started working on restructuring and rewriting the codebase. As of today, *opensurfacesim* is designed to modularize three core aspects of a surface code simulation:
 

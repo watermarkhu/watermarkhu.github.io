@@ -6,13 +6,12 @@ date:   2020-09-16 10:14:01 +0200
 
 In the last months it seemed that everyone is joining Strava. It may due to that we're all tired of staying in our homes during the COVID-pandemic. Or it may be due to the fact that [almost half of all people have gained weight](https://www.hartvannederland.nl/nieuws/2020/helft-mensen-dikker-coronaquarantaine/) due to lack of movement. Whatever the reason, Strava has gained a lot of users. However, if you are an OG user and have joined before May 20th, 2020, you'll know that there were many useful features that are now locked behind the [Strava subscription](https://support.strava.com/hc/en-us/articles/360043959831-What-s-changed-on-Strava-). For example, the leaderboard, matched runs and route builder are all only for those that pay a minimum of around $5 per month. For many, it is just not woth it.
 
- <!--more-->
+![strava](https://support.strava.com/hc/article_attachments/360026727252/Strava_Athlete_Heatmap___Strava_Suzie.jpg)
+<!--more-->
 
 On of the removed features that I really enjoyed was the personal heatmap, on which you're activities are beautifully plotted on a stylized instance of Google Maps. Maybe it's just because I'm a sucker for these kind of things, but seeing everywhere I've run gave me a sense of accomplishment, as if my runs are engraved into the asphalt and bricks of these roads on the heatmap.
 
-![strava](https://support.strava.com/hc/article_attachments/360026727252/Strava_Athlete_Heatmap___Strava_Suzie.jpg)
-
-So why don't we build our own heatmap from your personal data? And along the way, let us add some more functionality and customization options to really make the heatmap our own. In this implementation, we can selectively show data based on location, time, or any time of metadata, and additional configure the look of the map to any style configured on the [Google Maps Platform Styling Wizard](https://mapstyle.withgoogle.com/). Note that you'll need a Google Cloud Platform account and a Google Maps API key.
+So, why don't we build our own heatmap from your personal data? And along the way, let us add some more functionality and customization options to really make the heatmap our own. In this implementation, we can selectively show data based on location, time, or any time of metadata, and additional configure the look of the map to any style configured on the [Google Maps Platform Styling Wizard](https://mapstyle.withgoogle.com/). Note that you'll need a Google Cloud Platform account and a Google Maps API key.
 
 ## Your Strava data
 

@@ -46,7 +46,6 @@ disqus:
   shortname: watermarkhu
 
 minima:
-  skin: dark
   social_links:
     github: watermarkhu
     instagram: watermarkhu

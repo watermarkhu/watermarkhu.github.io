@@ -3,25 +3,15 @@ layout: default
 title: CV
 permalink: /cv/
 ---
-<link href="../css/cv.css" type="text/css" rel="stylesheet" media="screen">
+<link href="../assets/css/cv.css" type="text/css" rel="stylesheet" media="screen">
 
-<div id="cvbox">
-<div style="display: inline-block"> <h1 style="width:8em;">Curriculum Vitae<br>Resume</h1> </div>
-<div style="display: inline-block;" id="cvdownload">
-<a href="{{site.url}}/data/cv/CV_Shui_Hu_2020.pdf"> 
-<img src="{{site.url}}/data/cv/CV.png" alt="CV preview">
-PDF version</a>
+<div class="titlebar">
+<div class="pic_box">
+<img class="picture" src="/about/me.jpg" alt="Mark">
 </div>
+<h1>Curriculum Vitae</h1>
+<p><a href="{{site.url}}/data/cv/CV_Shui_Hu_2020.pdf"> Download PDF</a></p>
 </div>
-
-<!-- ## Currently
-
-Looking for a job. Working on OpenSurfaceSim.
-
-### Summary
-
-Applied Physics Graduate, Python developer, tweaker.
- -->
 
 ## EXPERIENCE
 
@@ -81,18 +71,18 @@ _Second prize_ and presentation award for the 2012 SIMC challenge.
 
 `2020`
 **Quasilinear-Time Decoding Algorithm for Topological Codes with High Decoding Performance**, _S. Hu, D. Elkouss_  
+Pre-print  
 [Conference paper](https://www.researchgate.net/publication/344163179_Quasilinear_Time_Decoding_Algorithm_for_Topological_Codes_with_High_Error_Threshold)  
-Pre-print
 
 `2020`
 **Quasilinear Time Decoding Algorithm for Topological Codes with High Error Threshold**, _S. Hu, D. Elkouss_  
-[DOI: 10.13140/RG.2.2.13495.96162](http://dx.doi.org/10.13140/RG.2.2.13495.96162)  
-Master thesis
+Master thesis  
+[![DOI](https://img.shields.io/badge/DOI-10.13140%2FRG.2.2.13495.96162-blue)](http://dx.doi.org/10.13140/RG.2.2.13495.96162)  
 
 `2017`
 **User-friendly analysis of fluorescent spot position of bacterial proteins using a microfluidic device and agarose pads.**, _S. Hu, R. de Leeuw_  
-[DOI: 10.13140/RG.2.2.34615.55205](http://dx.doi.org/10.13140/RG.2.2.34615.55205)  
-Bachelor thesis
+Bachelor thesis  
+[![DOI](https://img.shields.io/badge/DOI-10.13140%2FRG.2.2.34615.55205-blue)](http://dx.doi.org/10.13140/RG.2.2.34615.55205)  
 
 ## PROJECTS
 

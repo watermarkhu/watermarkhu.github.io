@@ -43,7 +43,7 @@ code {
 	text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 730px) {
 	h2 {
 		font-size: 160%;
 		margin-top: 1em;

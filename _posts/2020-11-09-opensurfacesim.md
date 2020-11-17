@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Releasing my package for surface code simulations: opensurfacesim"
+title: "Releasing my package for surface code simulations: Qsurface"
 date: 2020-11-09
 ---
 
-A *little* while ago, I started my graduation project in the field of quantum error-correction. During this project, we have successfully developed a new type of decoder for the surface code, for which the publication is currently in pre-print. To fully understand the mechanics of the surface code decoders that eventually led to our decoder, I had built my surface code simulator in Python that allowed for the visualization of each decoding step. To my surprise, my application for a microgrant to the [Unitary Fund](https://unitary.fund) was accepted, which allowed me the continue working for a few months after graduation. Today, I've finished my work and released the simulator on [PyPI](https://pypi.org/project/opensurfacesim/), which means you can install it via `pip install opensurfacesim`! Let me tell you more about it.
+A *little* while ago, I started my graduation project in the field of quantum error-correction. During this project, we have successfully developed a new type of decoder for the surface code, for which the publication is currently in pre-print. To fully understand the mechanics of the surface code decoders that eventually led to our decoder, I had built my surface code simulator in Python that allowed for the visualization of each decoding step. To my surprise, my application for a microgrant to the [Unitary Fund](https://unitary.fund) was accepted, which allowed me the continue working for a few months after graduation. Today, I've finished my work and released the simulator on [PyPI](https://pypi.org/project/qsurface/), which means you can install it via `pip install qsurface`! Let me tell you more about it.
 
 ![PyPI screenshot]({{site.url}}/data/2020-11-09-opensurfacesim/pypi.jpg "Look at ma boy!")
 <!--more-->
@@ -19,11 +19,11 @@ The design of a *quantum* error-correcting code is thus fundamentally different 
 
 ![Google's Sycamore quantum processor](https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Sycamore-Rainbow-cropped.max-1000x1000.jpg "Google's Sycamore processor with which Google had (controversially) achieved quantum supremacy used the surface code for quantum error correction.")
 
-## opensurfacesim
+## Qsurface
 
 Initially, the simulator's focus was to visualize each step of the decoding process of the [*Union-Find*](https://arxiv.org/pdf/1709.06218.pdf) decoder. This is a relatively new decoder that offers fast decoding at the cost of slightly decreased fidelity compared to the standard [*Minimum-Weight Perfect Matching* (MWPM)](https://arxiv.org/abs/quant-ph/0110143) decoder. I was determined that the fidelity could be improved. By studying the decoding process using the simulator, we developed a modification that is now dubbed the *Union-Find Node-Suspension* decoder. You can read more about decoders in my [thesis](https://www.researchgate.net/publication/344163215_Quasilinear_Time_Decoding_Algorithm_for_Topological_Codes_with_High_Error_Threshold) or in the paper (link updated when published).
 
-After receiving the grant, I realized that the simulator's modularity is a prime objective and started working on restructuring and rewriting the codebase. As of today, *opensurfacesim* is designed to modularize three core aspects of a surface code simulation:
+After receiving the grant, I realized that the simulator's modularity is a prime objective and started working on restructuring and rewriting the codebase. As of today, Qsurface is designed to modularize three core aspects of a surface code simulation:
 
 1. The surface code
 2. The error model
@@ -32,13 +32,13 @@ After receiving the grant, I realized that the simulator's modularity is a prime
 For each core module, template classes are provided that should ease the development of new types of surface codes, error modules and decoders. But the most popular types of the core modules are already included. For example, to simulate the *toric* surface code and simulate with *bitflip* error for 10 iterations and decode with the *MWPM* decoder:
 
 ```python
->>> from opensurfacesim.main import initialize, run
+>>> from qsurface.main import initialize, run
 >>> code, decoder = initialize((6,6), "toric", "mwpm", enabled_errors=["pauli"])
 >>> run(code, decoder, iterations=10, error_rates = {"p_bitflip": 0.1})
 {'no_error': 8}
 ```
 
-Visualization of the code and decoding process is still one of *opensurfacesim*'s prime objective. A template plotting module is provided that allows for interactive plotting and moving backward and forward in history to show past instances of the figure. The surface code figure uses this template, and an example is shown below.
+Visualization of the code and decoding process is still one of Qsurface's prime objective. A template plotting module is provided that allows for interactive plotting and moving backward and forward in history to show past instances of the figure. The surface code figure uses this template, and an example is shown below.
 
 ```python
 >>> code, decoder = initialize(
@@ -57,10 +57,10 @@ Visualization of the code and decoding process is still one of *opensurfacesim*'
 ... )
 ```
 
-![Interactive plotting on a toric code with faulty measurements.](https://raw.githubusercontent.com/watermarkhu/OpenSurfaceSim/master/images/toric-3d.gif "Now this doesn't look that good on a dark background :(")
+![Interactive plotting on a toric code with faulty measurements.](https://raw.githubusercontent.com/watermarkhu/qsurface/master/images/toric-3d.gif "Now this doesn't look that good on a dark background :(")
 
-You can find more information on installing the package, the requirements, and more examples on the [GitHub repository](https://github.com/watermarkhu/opensurfacesim). More information on how to use the package can be found in the [documentation](https://opensurfacesim.readthedocs.io).
+You can find more information on installing the package, the requirements, and more examples on the [GitHub repository](https://github.com/watermarkhu/qsurface). More information on how to use the package can be found in the [documentation](https://qsurface.readthedocs.io).
 
 ---
 
-A lot of the codebase has changed from the version that I used for my thesis. The version at the time worked fine but wasn't structured nicely and not at all well documented enough to be used by any individual than myself (and the poor master student that succeeded me, probably). The folks at Unitary Fund have shown me the required steps for developing an open-source scientific library. I've learned the benefits of testing and continuous integration, the tools for automatic documentation generation, and how to distribute and publish my package. I've followed the steps [outlined here](https://github.com/nathanshammah/scikit-project) by Nathan Shammah from the Unitary Fund. Even though some tools listed can be updated (Many prefer to use VSCode as the IDE for its versatility, extensions, and debugging modes, and I personally prefer GitHub Actions for CI due to its direct integration in GitHub), it has been a great stepping stone in developing *opensurfacesim, a simulator and visualizer for surface code and decoding the surface code*.
+A lot of the codebase has changed from the version that I used for my thesis. The version at the time worked fine but wasn't structured nicely and not at all well documented enough to be used by any individual than myself (and the poor master student that succeeded me, probably). The folks at Unitary Fund have shown me the required steps for developing an open-source scientific library. I've learned the benefits of testing and continuous integration, the tools for automatic documentation generation, and how to distribute and publish my package. I've followed the steps [outlined here](https://github.com/nathanshammah/scikit-project) by Nathan Shammah from the Unitary Fund. Even though some tools listed can be updated (Many prefer to use VSCode as the IDE for its versatility, extensions, and debugging modes, and I personally prefer GitHub Actions for CI due to its direct integration in GitHub), it has been a great stepping stone in developing Qsurface, *a simulator and visualizer for surface code and decoding the surface code*.

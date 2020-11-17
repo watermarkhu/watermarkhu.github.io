@@ -1,4 +1,4 @@
----
+Bun---
 layout: default
 title: CV
 permalink: /cv/
@@ -61,7 +61,7 @@ Curriculum track: science & engineering and science & health with additional Ger
 
 `2020`
 **Unitary Fund**, _non-profit microgrant program_,  
-_To further develop Qsurface, a simulator package for surface codes. The grant will improve visualization methods and facilitate the collaboration of an open, modular platform for surface code simulations._
+_To further develop qsurface, a simulator package for surface codes. The grant will improve visualization methods and facilitate the collaboration of an open, modular platform for surface code simulations._
 
 `2012`
 **Singapore International Mathematics Challenge**, _NUS_  
@@ -87,7 +87,7 @@ Bachelor thesis
 ## PROJECTS
 
 `2019-2020`
-**Qsurface** (Open Surface Code Simulations)  
+**qsurface** (Open Surface Code Simulations)  
 [![PyPI version](https://img.shields.io/pypi/v/qsurface?color=blue)](https://pypi.org/project/qsurface/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4247617.svg)](https://doi.org/10.5281/zenodo.4247617)  
 Open source simulator for benchmarking and visualizing surface code decoders, written in Python. Grant received from the Unitary Fund.
 

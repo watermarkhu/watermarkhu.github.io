@@ -7,7 +7,7 @@ permalink: /cv/
 
 <div class="titlebar">
 <div class="pic_box">
-<img class="picture" src="/about/me.jpg" alt="Mark">
+<img class="picture" src="/data/me.jpg" alt="Mark">
 </div>
 <h1>Curriculum Vitae</h1>
 <p><a href="{{site.url}}/data/cv/CV_Shui_Hu_2020.pdf"> Download PDF</a></p>
@@ -43,19 +43,20 @@ Prototype software of 3D volume reconstruction from stereometric imaging via MAT
 
 `2017-2018`
 **Master Applied Physics**, _Delft University of Technology_  
-Electives on fluid dynamics, imaging physics and quantum mechanics. Master thesis on quantum computation at [QuTech](https://www.qutech.nl); new solutions to quantum error correction on surface codes via a self-developed quantum simulator in Python.
+Electives on fluid dynamics, imaging physics, and quantum mechanics. 
+Master thesis on quantum error correction at [QuTech](https://www.qutech.nl); development and benchmarking of a new decoder for the surface code via a self-produced quantum simulator in Python.
 
 `2013-2017`
 **Bachelor Applied Physics**, _Delft University of Technology_  
-Bachelor thesis on imaging physics and biophysics; development and documentation of a custom package for DNA analysis in MATLAB.
+Bachelor thesis on imaging and biophysics; description and further development of a software package for analysis of protein movement during DNA replication in E. Coli with MATLAB. 
 
 `2015-2016`
 **Medical Delta**, _Erasmus University Rotterdam, Leiden University_  
-Minor program in healthcare and medicine, including courses on anatomy, biophysical processes, and imaging techniques.
+Minor program in medicin. Includes courses on anatomy, biophysical processes, and radiology.
 
 `2007-2013`
 **Gymnasium**, _Lorentz Casimir Lyceum_  
-Curriculum track: science & engineering and science & health with additional German and French courses.
+Curriculum track: science & engineering and science & health with additional German, French and geology courses.
 
 ## AWARDS
 
@@ -69,7 +70,7 @@ _Second prize_ and presentation award for the 2012 SIMC challenge.
 
 ## PUBLICATIONS
 
-`2020`
+`TBA`
 **Quasilinear-Time Decoding Algorithm for Topological Codes with High Decoding Performance**, _S. Hu, D. Elkouss_  
 Pre-print  
 [Conference paper](https://www.researchgate.net/publication/344163179_Quasilinear_Time_Decoding_Algorithm_for_Topological_Codes_with_High_Error_Threshold)  
@@ -80,7 +81,7 @@ Master thesis
 [![DOI](https://img.shields.io/badge/DOI-10.13140%2FRG.2.2.13495.96162-blue)](http://dx.doi.org/10.13140/RG.2.2.13495.96162)  
 
 `2017`
-**User-friendly analysis of fluorescent spot position of bacterial proteins using a microfluidic device and agarose pads.**, _S. Hu, R. de Leeuw_  
+**User-friendly analysis of fluorescent spot position of bacterial proteins using a microfluidic device and agarose pads**, _S. Hu, R. de Leeuw_  
 Bachelor thesis  
 [![DOI](https://img.shields.io/badge/DOI-10.13140%2FRG.2.2.34615.55205-blue)](http://dx.doi.org/10.13140/RG.2.2.34615.55205)  
 
@@ -106,7 +107,7 @@ Presidential role in organizing the freshmen weekend activity for 300+ students.
 **Study tour committee**, _Vereniging voor Technische Physica_  
 Graphic design, communication, and planning for the organization of a 30-day study tour to South-East Asia and China. [View site](https://studytour2016.vvtp.tudelft.nl/).
 
-`2007-2015`
+`2012-2015`
 **Various committees**,  _Vereniging voor Technische Physica, AEGEE Delft, Lorentz Casimir Lyceum_  
 Various roles including organizer of symposia, editor, and graphic designer for the faculty magazine and yearbook, and IT related committees.
 
@@ -122,12 +123,11 @@ English
 
 ### Proficiency
 
-`expert`
-Python, LaTeX
+`proficient`
+Python, MATLAB, LaTeX
 
-`average`
-MATLAB, Bash  
-Adobe Creative Suite, Autodesk Fusion, Autodesk CFD
+`competent`
+SQL, CI/CD, Bash, Adobe Creative Suite, Autodesk Fusion & CFD
 
-`basic`
-HTML5 & CSS, Javascript, SQL
+`beginner`
+HTML5 & CSS, Javascript

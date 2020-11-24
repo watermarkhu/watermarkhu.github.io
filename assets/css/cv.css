@@ -89,7 +89,7 @@ code {
 
 .titlebar {
 	display: grid;
-	grid-template-columns: 33% auto;
+	grid-template-columns: 34% auto;
 	grid-template-rows: auto auto;
 	align-items: center;
 	grid-template-areas: 

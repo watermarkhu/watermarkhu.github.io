@@ -21,7 +21,7 @@ Preparation and testing of online courses on quantum mechanics.
 
 `2018-2019`
 **Flow Engineer**, _[Spirocco Kft.](https://en.spirocco.com/), Budapest_  
-Design, simulation, and testing of volume flow meter within an asthma inhaler using autodesk CAD and CFD programns and 3D printing.
+Design, simulation, and testing of volume flow meter within an asthma inhaler using Autodesk CAD and CFD programs, and 3D printing.
 
 `2018`
 **Marketing and communications intern**, _[Technoorg Linda Kft.](https://technoorg.hu/), Budapest_  
@@ -32,7 +32,7 @@ Production of a series of educational videos on Technoorgs' electron microscopy 
 Management of webshop inventory. Development of Python software for convenient product management.
 
 `2014-2017`
-**Highschool student tutor**, _[iLoveHomework](http://www.ilovehomework.nl/), The Hague_  
+**High school student tutor**, _[iLoveHomework](http://www.ilovehomework.nl/), The Hague_  
 Homework guidance and tutoring on the subjects of physics, mathematics, chemistry, and biology.
 
 `2016`
@@ -42,21 +42,21 @@ Prototype software of 3D volume reconstruction from stereometric imaging via MAT
 ## EDUCATION
 
 `2017-2018`
-**Master Applied Physics**, _Delft University of Technology_  
-Electives on fluid dynamics, imaging physics, and quantum mechanics. 
+**Master of Applied Physics**, _Delft University of Technology_  
+Electives on fluid dynamics, imaging physics, and quantum mechanics.
 Master thesis on quantum error correction at [QuTech](https://www.qutech.nl); development and benchmarking of a new decoder for the surface code via a self-produced quantum simulator in Python.
 
 `2013-2017`
-**Bachelor Applied Physics**, _Delft University of Technology_  
-Bachelor thesis on imaging and biophysics; description and further development of a software package for analysis of protein movement during DNA replication in E. Coli with MATLAB. 
+**Bachelor of Applied Physics**, _Delft University of Technology_  
+Bachelor thesis on imaging and biophysics; description and further development of a software package for analysis of protein movement during DNA replication in E. Coli with MATLAB.
 
 `2015-2016`
 **Medical Delta**, _Erasmus University Rotterdam, Leiden University_  
-Minor program in medicin. Includes courses on anatomy, biophysical processes, and radiology.
+Minor program in medicine. Includes courses on anatomy, biophysical processes, and radiology.
 
 `2007-2013`
 **Gymnasium**, _Lorentz Casimir Lyceum_  
-Curriculum track: science & engineering and science & health with additional German, French and geology courses.
+Curriculum track: science & engineering and science & health with additional German, French, and geology courses.
 
 ## AWARDS
 
@@ -90,7 +90,7 @@ Bachelor thesis
 `2019-2020`
 **Qsurface** (Open Surface Code Simulations)  
 [![PyPI version](https://img.shields.io/pypi/v/qsurface?color=blue)](https://pypi.org/project/qsurface/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4247617.svg)](https://doi.org/10.5281/zenodo.4247617)  
-Open source simulator for benchmarking and visualizing surface code decoders, written in Python. Grant received from the Unitary Fund.
+Open-source simulator for benchmarking and visualizing surface code decoders, written in Python. Grant received from the Unitary Fund.
 
 ## ACTIVITIES
 
@@ -109,7 +109,7 @@ Graphic design, communication, and planning for the organization of a 30-day stu
 
 `2012-2015`
 **Various committees**,  _Vereniging voor Technische Physica, AEGEE Delft, Lorentz Casimir Lyceum_  
-Various roles including organizer of symposia, editor, and graphic designer for the faculty magazine and yearbook, and IT related committees.
+Various roles including the organizer of symposia, editor, and graphic designer for the faculty magazine and yearbook, and IT related committees.
 
 ## SKILLS
 

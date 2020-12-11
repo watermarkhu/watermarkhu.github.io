@@ -41,7 +41,7 @@ Prototype software of 3D volume reconstruction from stereometric imaging via MAT
 
 ## EDUCATION
 
-`2017-2018`
+`2017-2020`
 **Master Applied Physics**, _Delft University of Technology_  
 Electives on fluid dynamics, imaging physics and quantum mechanics. Master thesis on quantum computation at [QuTech](https://www.qutech.nl); new solutions to quantum error correction on surface codes via a self-developed quantum simulator in Python.
 

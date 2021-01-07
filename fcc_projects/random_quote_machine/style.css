@@ -1,0 +1,54 @@
+#wrapper {
+  text-align: center;
+}
+
+.btn {
+  height: 40px;
+}
+
+#quote-box {
+  border-radius: 3px;
+  position: relative;
+  width: 450px;
+  padding: 40px 50px;
+  display: table;
+}
+
+#quote-box .quote-text {
+  text-align: center;
+  width: 450px;
+  height: auto;
+  clear: both;
+  font-weight: 500;
+  font-size: 1.75em;
+}
+
+#quote-box .quote-text i {
+  font-size: 1em;
+  margin: 0.5em 0.5em;
+}
+
+#quote-box .quote-author {
+  width: 450px;
+  height: auto;
+  clear: both;
+  padding-top: 20px;
+  font-size: 1em;
+  text-align: right;
+}
+
+#quote-box .buttons {
+  margin: 15px auto 15px auto;
+}
+
+.footer {
+  width: 450px;
+  margin: 15px auto 15px auto;
+  font-size: 0.8em;
+}
+
+.footer a {
+  font-weight: 500;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

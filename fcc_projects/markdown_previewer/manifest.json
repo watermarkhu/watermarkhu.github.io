@@ -1,0 +1,8 @@
+{
+  "short_name": "Markdown Previewer",
+  "name": "A FreeCodeCamp project for a markdown previewer built using React and Bootstrap",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

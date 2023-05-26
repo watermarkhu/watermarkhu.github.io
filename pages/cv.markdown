@@ -16,7 +16,7 @@ permalink: /cv/
 ## EXPERIENCE
 `2021-now`
 **Metrology Design engineer**, _[ASML](https://www.asml.com/), Eindhoven_  
-Design, specify, test, and analyze qualification of new innovative products within the field of metrology. 
+Design, test and qualification of NPI software products for the ASML lithography machines. MATLAB devOps.
 
 `2018-2020`
 **Student assistant**, _[QuTech Academy](https://qutech.nl/academy/), Delft_  

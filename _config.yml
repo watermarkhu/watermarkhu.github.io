@@ -19,11 +19,11 @@
 # in the templates via {{ site.myvariable }}.
 
 title: (Mark) Shui Hu
-email: me[at]watermarkhu.nl
+email: me at watermarkhu.nl
 
 author:
   name: (Mark) Shui Hu
-  email: me[at]watermarkhu.nl
+  email: me at watermarkhu.nl
   
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to my website. Connect with me via any of my socials below!
@@ -48,9 +48,7 @@ disqus:
 minima:
   social_links:
     github: watermarkhu
-    instagram: watermarkhu
     linkedin: watermarkhu
-    telegram: watermarkhu
 
 kramdown:
   # instruct kramdown to parse inside html block elements

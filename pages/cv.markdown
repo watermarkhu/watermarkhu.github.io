@@ -124,13 +124,17 @@ Dutch, Chinese
 `fluent`
 English
 
-### Proficiency
-
-`proficient`
-Python, MATLAB, LaTeX
+### Programming
 
 `competent`
-SQL, CI/CD, Bash, Adobe Creative Suite, Autodesk Fusion & CFD
+Python, MATLAB
 
 `beginner`
-HTML5 & CSS, Javascript
+HTML5 & CSS, Javascript, SQL, Julia
+
+### Others
+
+CI/CD
+Adobe Creative Suite
+3D prototyping (modeling & printing)
+DIY electronics enthusiast

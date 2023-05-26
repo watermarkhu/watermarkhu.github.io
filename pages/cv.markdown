@@ -10,7 +10,7 @@ permalink: /cv/
 <img class="picture" src="/data/me.jpg" alt="Mark">
 </div>
 <h1>Curriculum Vitae</h1>
-<p><a href="{{site.url}}/data/cv/CV_Shui_Hu_2020.pdf"> Download PDF</a></p>
+<!-- <p><a href="{{site.url}}/data/cv/CV_Shui_Hu_2020.pdf"> Download PDF</a></p> -->
 </div>
 
 ## EXPERIENCE
@@ -108,7 +108,7 @@ Presidential role in organizing the freshmen weekend activity for 300+ students.
 
 `2015-2016`
 **Study tour committee**, _Vereniging voor Technische Physica_  
-Graphic design, communication, and planning for the organization of a 30-day study tour to South-East Asia and China. [View site](https://studytour2016.vvtp.tudelft.nl/).
+Graphic design, communication, and planning for the organization of a 30-day study tour to South-East Asia and China.
 
 `2012-2015`
 **Various committees**,  _Vereniging voor Technische Physica, AEGEE Delft, Lorentz Casimir Lyceum_  

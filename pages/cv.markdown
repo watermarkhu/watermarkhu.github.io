@@ -16,7 +16,7 @@ permalink: /cv/
 ## EXPERIENCE
 `2021-now`
 **Metrology Design engineer**, _[ASML](https://www.asml.com/), Eindhoven_  
-Design, test and qualification of NPI software products for the ASML lithography machines. MATLAB devOps.
+Design, test and qualification of software products for ASML's D&E department. Migration and maitenance of one of the largest diagnostics codebases and introducing various CI/CD pipelines for documentation and testing. 
 
 `2018-2020`
 **Student assistant**, _[QuTech Academy](https://qutech.nl/academy/), Delft_  

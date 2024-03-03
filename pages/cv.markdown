@@ -89,6 +89,10 @@ Bachelor thesis
 [![DOI](https://img.shields.io/badge/DOI-10.13140%2FRG.2.2.34615.55205-blue)](http://dx.doi.org/10.13140/RG.2.2.34615.55205)  
 
 ## PROJECTS
+`2023-now`
+**textmate-grammar-python** ()
+[![PyPI - Version](https://img.shields.io/pypi/v/textmate-grammar-python.svg)](https://pypi.python.org/pypi/textmate-grammar-python)
+A lexer and tokenizer for grammar files as defined by TextMate and used in VSCode, implemented in Python. 
 
 `2019-2020`
 **Qsurface** (Open Surface Code Simulations)  

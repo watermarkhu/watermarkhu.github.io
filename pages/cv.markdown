@@ -27,15 +27,11 @@ Preparation and testing of online courses on quantum mechanics.
 Design, simulation, and testing of volume flow meter within an asthma inhaler using Autodesk CAD and CFD programs, and 3D printing.
 
 `2018`
-**Marketing and communications intern**, _[Technoorg Linda Kft.](https://technoorg.hu/), Budapest_  
-Production of a series of educational videos on Technoorgs' electron microscopy products.
-
-`2018`
 **Online content manager**, _[Bever CV](https://www.bever.nl/), Pijnacker_  
 Management of webshop inventory. Development of Python software for convenient product management.
 
 `2014-2017`
-**High school student tutor**, _[iLoveHomework](http://www.ilovehomework.nl/), The Hague_  
+**Student tutor**, _[iLoveHomework](http://www.ilovehomework.nl/), The Hague_  
 Homework guidance and tutoring on the subjects of physics, mathematics, chemistry, and biology.
 
 `2016`

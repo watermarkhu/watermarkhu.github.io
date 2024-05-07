@@ -137,7 +137,7 @@ HTML5 & CSS, Javascript, SQL
 
 ### Other skills
 
-`programming`
+`developer`
 GitHub Actions CI/CD
 
 Docker (self-hosting)

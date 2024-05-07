@@ -126,15 +126,27 @@ English
 
 ### Programming
 
-`competent`
+`export`
 Python, MATLAB
 
+`competent`
+Julia
+
 `beginner`
-HTML5 & CSS, Javascript, SQL, Julia
+HTML5 & CSS, Javascript, SQL
 
-### Others
+### Other skills
 
-CI/CD
+`programming`
+GitHub Actions CI/CD
+
+Docker (self-hosting)
+
+`creative`
 Adobe Creative Suite
+
 3D prototyping (modeling & printing)
-DIY electronics enthusiast
+
+Home Automation
+
+DIY electronics 

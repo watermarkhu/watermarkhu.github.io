@@ -14,7 +14,11 @@ permalink: /cv/
 </div>
 
 ## EXPERIENCE
-`2021-now`
+`2024-now`
+**DevOps software engineer**, _[ASML](https://www.asml.com/), Eindhoven_  
+Automating, deploying, and managing cloud-based infrastructure, with the focus on bringing modern practices to older languages. Experienced in CI/CD, configuration management, and collaborating with development and operations teams to deliver high-quality, reliable software efficiently.
+
+`2021-2024`
 **Metrology Design engineer**, _[ASML](https://www.asml.com/), Eindhoven_  
 Design, test and qualification of software products for ASML's D&E department. Migration and maitenance of one of the largest diagnostics codebases and introducing various CI/CD pipelines for documentation and testing. 
 

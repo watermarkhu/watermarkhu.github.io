@@ -30,14 +30,6 @@ Preparation and testing of online courses on quantum mechanics.
 **Flow Engineer**, _[Spirocco Kft.](https://en.spirocco.com/), Budapest_  
 Design, simulation, and testing of volume flow meter within an asthma inhaler using Autodesk CAD and CFD programs, and 3D printing.
 
-`2018`
-**Online content manager**, _[Bever CV](https://www.bever.nl/), Pijnacker_  
-Management of webshop inventory. Development of Python software for convenient product management.
-
-`2014-2017`
-**Student tutor**, _[iLoveHomework](http://www.ilovehomework.nl/), The Hague_  
-Homework guidance and tutoring on the subjects of physics, mathematics, chemistry, and biology.
-
 `2016`
 **Software engineer intern**, _[PinkRF](https://www.pinkrf.com/), Nijmegen_  
 Prototype software of 3D volume reconstruction from stereometric imaging via MATLAB.
@@ -131,20 +123,13 @@ English
 ### Programming
 
 `export`
-Python, MATLAB
+Python, MATLAB, GitHub Actions CI/CD
 
 `competent`
 Julia
 
 `beginner`
-HTML5 & CSS, Javascript, SQL
-
-### Other skills
-
-`developer`
-GitHub Actions CI/CD
-
-Docker (self-hosting)
+Rust, HTML5 & CSS, Javascript, SQL
 
 `creative`
 Adobe Creative Suite
@@ -152,5 +137,7 @@ Adobe Creative Suite
 3D prototyping (modeling & printing)
 
 Home Automation
+
+Selfhosting
 
 DIY electronics 

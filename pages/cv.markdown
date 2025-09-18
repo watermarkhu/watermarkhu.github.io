@@ -16,11 +16,11 @@ permalink: /cv/
 ## EXPERIENCE
 `2024-now`
 **DevOps software engineer**, _[ASML](https://www.asml.com/), Eindhoven_  
-Automating, deploying, and managing cloud-based infrastructure, with the focus on bringing modern practices to older languages. Experienced in CI/CD, configuration management, and collaborating with development and operations teams to deliver high-quality, reliable software efficiently.
+Responsible for automating and managing both on-site and cloud infrastructure, working closely with development and operations teams to build and deploy custom automation tools that serve thousands of enterprise users, while ensuring system reliability through CI/CD practices and configuration management.
 
 `2021-2024`
 **Metrology Design engineer**, _[ASML](https://www.asml.com/), Eindhoven_  
-Design, test and qualification of software products for ASML's D&E department. Migration and maitenance of one of the largest diagnostics codebases and introducing various CI/CD pipelines for documentation and testing. 
+Design, testing, and qualification of software products for ASML's D&E department. Successfully migrated and maintained one of the company's largest diagnostics codebases while implementing comprehensive CI/CD pipelines for documentation, testing, and deployment workflows.
 
 `2018-2020`
 **Student assistant**, _[QuTech Academy](https://qutech.nl/academy/), Delft_  
@@ -120,16 +120,16 @@ Dutch, Chinese
 `fluent`
 English
 
-### Programming
+### Development
 
 `export`
 Python, MATLAB, GitHub Actions CI/CD
 
 `competent`
-Julia
+Julia, Go
 
 `beginner`
-Rust, HTML5 & CSS, Javascript, SQL
+Rust, Javascript, SQL
 
 `creative`
 Adobe Creative Suite
@@ -140,4 +140,4 @@ Home Automation
 
 Selfhosting
 
-DIY electronics 
+DIY electronics

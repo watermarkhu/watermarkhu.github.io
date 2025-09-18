@@ -81,6 +81,12 @@ Bachelor thesis
 [![DOI](https://img.shields.io/badge/DOI-10.13140%2FRG.2.2.34615.55205-blue)](http://dx.doi.org/10.13140/RG.2.2.34615.55205)  
 
 ## PROJECTS
+
+`2025-now`
+**maxx/mkdocstings-matlab**
+[![PyPI - Version](https://img.shields.io/pypi/v/mkdocstrings-matlab.svg)](https://pypi.python.org/pypi/mkdocstings-matlab)
+Python library for parsing and analyzing MATLAB code, providing support for extracting signatures, documentation, and metadata from MATLAB projects. Automatic API documentation from sources in via MkDocs.
+
 `2023-now`
 **textmate-grammar-python**
 [![PyPI - Version](https://img.shields.io/pypi/v/textmate-grammar-python.svg)](https://pypi.python.org/pypi/textmate-grammar-python)
@@ -98,17 +104,9 @@ Open-source simulator for benchmarking and visualizing surface code decoders, wr
 As participant: Winner of FLLOEC Norway 2007 and first in robot design in FLLOAC Japan 2008.  
 As volunteer: Judging and organization for the regional, national, or international finals of the First Lego League competition in the Netherlands and Germany.
 
-`2017`
-**Freshmen weekend committee**, _Vereniging voor Technische Physica_  
-Presidential role in organizing the freshmen weekend activity for 300+ students.
-
-`2015-2016`
-**Study tour committee**, _Vereniging voor Technische Physica_  
-Graphic design, communication, and planning for the organization of a 30-day study tour to South-East Asia and China.
-
-`2012-2015`
-**Various committees**,  _Vereniging voor Technische Physica, AEGEE Delft, Lorentz Casimir Lyceum_  
-Various roles including the organizer of symposia, editor, and graphic designer for the faculty magazine and yearbook, and IT related committees.
+`2012-2017`
+**Various committees and activities**, _Vereniging voor Technische Physica, AEGEE Delft, Lorentz Casimir Lyceum_  
+Presidential role in organizing the freshmen weekend activity for 300+ students (2017). Graphic design, communication, and planning for the organization of a 30-day study tour to South-East Asia and China (2015-2016). Various other roles including organizer of symposia, editor, and graphic designer for the faculty magazine and yearbook, and IT related committees (2012-2015).
 
 ## SKILLS
 

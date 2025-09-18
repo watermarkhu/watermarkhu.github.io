@@ -85,16 +85,19 @@ Bachelor thesis
 `2025-now`
 **maxx/mkdocstings-matlab**
 [![PyPI - Version](https://img.shields.io/pypi/v/mkdocstrings-matlab.svg)](https://pypi.python.org/pypi/mkdocstings-matlab)
+
 Python library for parsing and analyzing MATLAB code, providing support for extracting signatures, documentation, and metadata from MATLAB projects. Automatic API documentation from sources in via MkDocs.
 
 `2023-now`
 **textmate-grammar-python**
 [![PyPI - Version](https://img.shields.io/pypi/v/textmate-grammar-python.svg)](https://pypi.python.org/pypi/textmate-grammar-python)
+
 A lexer and tokenizer for grammar files as defined by TextMate and used in VSCode, implemented in Python. 
 
 `2019-2020`
 **Qsurface** (Open Surface Code Simulations)  
 [![PyPI version](https://img.shields.io/pypi/v/qsurface.svg)](https://pypi.org/project/qsurface/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4247617.svg)](https://doi.org/10.5281/zenodo.4247617)  
+
 Open-source simulator for benchmarking and visualizing surface code decoders, written in Python. Grant received from the Unitary Fund.
 
 ## ACTIVITIES
